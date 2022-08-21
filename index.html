@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="vod.css">
+  <title>VOD library</title>
+  <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js'></script>
+  <script type="module" src="js_vod/appVod.js" defer></script>
+</head>
+
+<body>
+  <header class="container-fluid p-2 bg-info">
+    <nav class="container">
+      <div  class="row align-items-center">
+        <div class="col-auto logo">
+          <h2>My Vod</h2>
+        </div>
+        <div class="col-md-4 d-flex h-75">
+          <input placeholder="search for movies..." type="text" id="id_input" class="form-control">
+          <button id="search_btn" class="btn btn-dark">Search</button>
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+          <select id="id_select" class="h-75 col-auto my-md-0 my-3 form-select">
+            <option value="">Choose prop:</option>
+            <option value="Title">Title</option>
+            <option value="Year">Year</option>
+          </select>
+          <label class="py-3 mx-1 col-auto me-2">Sort by</label>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="strip container-fluid">
+    <div class="container">
+      <h1 class="display-2">V.O.D WORLD</h1>
+    </div>
+  </div>
+  <main class="container-fluid py-4">
+    <div class="container">
+      <h2 class="text-center">List of movies:</h2>
+      <div id="id_loading" class="loading text-center">
+        <img src="images/Loadingsome.gif" alt="loading">
+        <p class="display-3">Loading...</p>
+      </div>
+      <div id="id_row" class="row">
+        <!-- <div class="col-md-4 p-2">
+          <article class="p-2 shadow overflow-hidden">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGYyZGM5MGMtYTY2Ni00M2Y1LWIzNjQtYWUzM2VlNGVhMDNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="pic"  class="w-25 float-end ms-2">
+            <h2>Rambo</h2>
+            <div>Year:1988</div>
+            <a href="#" class="btn btn-warning">More info</a>
+          </article>
+        </div> -->
+      </div>
+    </div>  
+  </main>
+</body>
+
+</html>
